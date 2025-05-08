@@ -1,0 +1,37 @@
+.accordionImage {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  .accordionItem {
+    border-bottom: 1px solid #191919db;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .accordionItem h2{
+    width: 100%;
+    text-align: center;
+  }
+  .accordionHeader {
+    padding: 15px;
+    cursor: pointer;
+    background-color: #0d0d0d;
+    transition: 0.5s;
+    width: 100%;
+
+  }
+  
+  .accordionHeader:hover {
+    background-color: #2f2f2f99;
+    box-shadow: 1px 1px 10px red;
+    color: rgb(204, 18, 18);
+  }
+  
+  .accordionContent {
+    padding: 15px;
+    width: 100%;
+
+  }

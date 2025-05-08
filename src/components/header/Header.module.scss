@@ -1,0 +1,35 @@
+/* components/Header.module.scss */
+
+.header {
+    position: fixed; /* Fix the header at the top */
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #090808df; /* Background color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for effect */
+    z-index: 1000; /* Ensure header is above other elements */
+  }
+  
+  .navList {
+    list-style: none; /* Remove list markers */
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: space-around; /* Distribute items evenly */
+    padding: 10px 0; /* Padding */
+    margin: 0; /* Remove default margin */
+    border-bottom: 1px solid rgba(255, 0, 0, 0.414);
+  }
+  
+  .navItem {
+    margin: 0 15px; /* Add some margin between items */
+  }
+  
+  .navItem a {
+    text-decoration: none; /* Remove underline */
+    color: #f6bfbf; /* Text color */
+    font-weight: bold; /* Bold text */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  .navItem a:hover {
+    color: #f3000c; /* Change color on hover */
+  }
