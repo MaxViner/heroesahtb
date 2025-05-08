@@ -15,7 +15,7 @@ const Logo: React.FC<LogoProps> = ({ classname }) => {
       alt="Logo"
       width={100}
       height={100}
-      className={`${styles.logo} ${classname}`}
+      //   className={`${styles.logo} ${classname}`}
     />
   );
 };
