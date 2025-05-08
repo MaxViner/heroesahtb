@@ -2,12 +2,12 @@ import React from "react";
 import Image from "next/image";
 // import styles from "./Logo.module.scss";
 
-interface LogoProps {
-  classname?: string; // Опциональное свойство width
-}
+// interface LogoProps {
+//   classname?: string; // Опциональное свойство width
+// }
 
 // Основной экспорт компонента
-const Logo: React.FC<LogoProps> = ({ classname }) => {
+const Logo: React.FC = ({}) => {
   // Установка значения по умолчанию
   return (
     <Image
