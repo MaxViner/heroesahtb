@@ -8,10 +8,9 @@ interface LogoProps {
 
 // Основной экспорт компонента
 const Logo: React.FC<LogoProps> = ({ classname }) => {
-  // Установка значения по умолчанию
   return (
     <Image
-      src="/logo.png"
+      src="/Images/about/tottal.jpg"
       alt="Logo"
       width={100}
       height={100} // Убедитесь, что высота соответствует ширине, если логотип квадратный
