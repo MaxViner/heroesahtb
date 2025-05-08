@@ -8,6 +8,12 @@
     background-color: #090808df; /* Background color */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for effect */
     z-index: 1000; /* Ensure header is above other elements */
+    display: flex;
+    width: 100dvw;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   
   .navList {

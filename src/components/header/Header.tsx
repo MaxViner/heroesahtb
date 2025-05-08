@@ -1,9 +1,10 @@
 import Link from "next/link";
 import styles from "./Header.module.scss";
-
+import Logo from "../logo/Logo";
 const Header: React.FC = () => {
   return (
     <header className={styles.header}>
+      <Logo />
       <nav>
         <ul className={styles.navList}>
           {" "}

@@ -22,11 +22,16 @@ export const AboutPageAccordionData = [
     },
     {
       title: "Рукоход синусоида",
-      description: "Description for Item 4",
-      imageUrl: "https://via.placeholder.com/150?text=Image+4",
+      description:`Чтобы пройти рукоход «Синусоида», нужно перебраться с 
+                  одной стороны препятствия на другую, используя горизонтальные трубы. Пр
+                  и этом запрещается
+                  касаться любой частью тела опорных конструкций препятствия.  
+                  Для прохождения рукохода важно отработать технику: как раскачиваться, 
+                  какие движения делать корпусом тела и руками. `,
+      imageUrl: "/Images/about/hurdles/sinus.png",
     },
     {
-      title: "Item 5",
+      title: "Наклонная сетка",
       description: "Description for Item 5",
       imageUrl: "https://via.placeholder.com/150?text=Image+5",
     },
