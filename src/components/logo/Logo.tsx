@@ -1,21 +1,21 @@
 import React from "react";
 import Image from "next/image";
-// import styles from "./Logo.module.scss";
+import styles from "./Logo.module.scss";
 
-// interface LogoProps {
-//   classname?: string; // Опциональное свойство width
-// }
+interface LogoProps {
+  classname?: string; // Опциональное свойство width
+}
 
 // Основной экспорт компонента
-const Logo: React.FC = ({}) => {
+const Logo: React.FC<LogoProps> = ({ classname }) => {
   // Установка значения по умолчанию
   return (
     <Image
       src="/logo.png"
       alt="Logo"
       width={100}
-      height={100}
-      //   className={`${styles.logo} ${classname}`}
+      height={100} // Убедитесь, что высота соответствует ширине, если логотип квадратный
+      className={`${styles.logo} ${classname}`} // Применение стилей и дополнительных классов, если они переданы
     />
   );
 };
