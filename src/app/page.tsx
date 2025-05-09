@@ -1,4 +1,3 @@
-import Head from "next/head";
 import styles from "./page.module.scss";
 import Logo from "@/components/logo/Logo";
 import Image from "next/image";
