@@ -7,6 +7,8 @@
     width: 100dvw;
     display: flex;
     flex-direction: column;
+    background-color: black;
+    color: aliceblue;
     align-items: center;
     @media screen and (max-width:475px) {
         padding: 8px;
