@@ -1,3 +1,8 @@
+.page{
+  margin: 0 auto;
+  padding: 0;
+  width: 100dvw;
+}
 .main {
   display: flex;
   flex-direction: column;
@@ -5,6 +10,9 @@
   grid-row-start: 2;
   align-items: center;
   background: black;
+  margin: 0 auto;
+  border: 3px solid red;
+  margin-top: 100px;
   width: 100dvw;
   color: aliceblue;
   ol {
@@ -13,12 +21,25 @@
 }
 
 .MainLogo {
-  margin-top: 50px;
-  width: 80%;
+  margin-top: -110px;
+  z-index: 3;
+  width: 100%;
   max-width: 460px;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%,0%);
   height: auto;
+  mix-blend-mode: difference;
 }
-
+.banner{
+  position: relative;
+  width: auto;
+  height: 500px;
+  z-index: 3;
+  left: -100%; /* Start off-screen to the left */
+  animation: slideIn 0.5s forwards; 
+}
 .description {
   width: 90%;
   max-width: 800px;
@@ -71,9 +92,21 @@
   }
 }
 
-@media (max-width: 600px) {
-  .page {
-    padding: 32px;
-    padding-bottom: 80px;
+@keyframes slideIn {
+  0% {
+    left: -100%; /* Start from the left */
+  }
+  50% {
+    left: 100%; /* Move to the right */
+  }
+  100% {
+    left: -100%; /* Move back to the left */
+  }
+}
+
+/* Media query for screens below 475px */
+@media (max-width: 475px) {
+  .banner {
+    animation: infinite slideIn 60s ; /* Apply animation */
   }
 }

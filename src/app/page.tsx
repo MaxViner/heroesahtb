@@ -1,23 +1,25 @@
 import Head from "next/head";
 import styles from "./page.module.scss";
 import Logo from "@/components/logo/Logo";
+import Image from "next/image";
 
 export default function Home() {
   return (
-    <>
-      <Head>
-        <title>Герои степей</title>
-        <link rel="icon" href="/Images/Logo.svg" />
-      </Head>
-      <div className={styles.page}>
-        <main className={styles.main}>
-          <Logo classname={styles.MainLogo} />
-          <WelcomeMessage />
-        </main>
+    <div className={styles.page}>
+      <main className={styles.main}>
+        <Image
+          src="/Images/banner.png"
+          alt="banner"
+          width={1200}
+          height={600}
+          className={styles.banner}
+        ></Image>
+        <Logo classname={styles.MainLogo} />
+        <WelcomeMessage />
+      </main>
 
-        <footer className={styles.footer}></footer>
-      </div>
-    </>
+      <footer className={styles.footer}></footer>
+    </div>
   );
 }
 
