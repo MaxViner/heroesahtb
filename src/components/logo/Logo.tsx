@@ -10,7 +10,7 @@ interface LogoProps {
 const Logo: React.FC<LogoProps> = ({ classname }) => {
   return (
     <Image
-      src="/Images/Logo.svg"
+      src="/Images/ocr.png"
       alt="Logo"
       width={100}
       height={100} // Убедитесь, что высота соответствует ширине, если логотип квадратный
