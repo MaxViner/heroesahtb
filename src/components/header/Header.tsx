@@ -1,10 +1,16 @@
 import Link from "next/link";
 import styles from "./Header.module.scss";
-import Logo from "../logo/Logo";
+import Image from "next/image";
 const Header: React.FC = () => {
   return (
     <header className={styles.header}>
-      <Logo />
+      <Image
+        src="/Images/logo.png"
+        alt="Logo"
+        width={100}
+        height={100} // Убедитесь, что высота соответствует ширине, если логотип квадратный
+        className={`${styles.logo}`} // Применение стилей и дополнительных классов, если они переданы
+      />
       <nav>
         <ul className={styles.navList}>
           {" "}
