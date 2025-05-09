@@ -11,7 +11,6 @@
   align-items: center;
   background: black;
   margin: 0 auto;
-  border: 3px solid red;
   margin-top: 100px;
   width: 100dvw;
   color: aliceblue;
@@ -32,24 +31,23 @@
   height: auto;
   mix-blend-mode: difference;
 }
-.banner{
-  position: relative;
-  width: auto;
-  height: 500px;
-  z-index: 3;
-  left: -100%; /* Start off-screen to the left */
-  animation: slideIn 0.5s forwards; 
-}
+
 .description {
   width: 90%;
   max-width: 800px;
   font-size: 24px;
+  @media screen and (max-width:475px) {
+    font-size: 0.8rem;
+  }
 }
 
 .title {
   color: #e40b0bb4;
   font-size: 2rem;
   margin-bottom: 10px;
+  @media screen and (max-width:475px) {
+    font-size: 1.2rem;
+  }
 }
 
 .subtitle {
@@ -57,6 +55,9 @@
   font-size: 1.5rem;
   margin-top: 20px;
   margin-bottom: 10px;
+  @media screen and (max-width:475px) {
+    font-size: 1rem;
+  }
 }
 
 .bulletList {
@@ -92,21 +93,3 @@
   }
 }
 
-@keyframes slideIn {
-  0% {
-    left: -100%; /* Start from the left */
-  }
-  50% {
-    left: 100%; /* Move to the right */
-  }
-  100% {
-    left: -100%; /* Move back to the left */
-  }
-}
-
-/* Media query for screens below 475px */
-@media (max-width: 475px) {
-  .banner {
-    animation: infinite slideIn 60s ; /* Apply animation */
-  }
-}

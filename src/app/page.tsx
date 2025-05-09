@@ -1,18 +1,12 @@
+import Banner from "@/components/banner/Banner";
 import styles from "./page.module.scss";
 import Logo from "@/components/logo/Logo";
-import Image from "next/image";
 
 export default function Home() {
   return (
     <div className={styles.page}>
       <main className={styles.main}>
-        <Image
-          src="/Images/banner.png"
-          alt="banner"
-          width={1200}
-          height={600}
-          className={styles.banner}
-        ></Image>
+        <Banner imageUrl="/Images/banner.png" />
         <Logo classname={styles.MainLogo} />
         <WelcomeMessage />
       </main>

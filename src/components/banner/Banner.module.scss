@@ -1,0 +1,76 @@
+.banner{
+  position: relative;
+  width: auto;
+  height: 500px;
+  z-index: 3;
+  animation: slideIn 20s infinite; 
+}
+
+/* Media query for screens below 475px */
+
+
+
+@keyframes slideIn {
+  0% {
+    left: 0%; /* Start at the original position */
+  }
+  25% {
+    left: 5%; /* Move to the right */
+  }
+  50% {
+    left: 0%; /* Move beyond the right */
+  }
+  75% {
+    left: 5%; /* Move back towards the right */
+  }
+  100% {
+    left: 0%; /* End at the original position */
+  }
+}
+
+/* Media query for screens smaller than 600px */
+@media (max-width: 1000px) {
+  @keyframes slideIn {
+    0% {
+      left: 0%; /* Start at the original position */
+    }
+    25% {
+      left: 30%; /* Move to the right */
+    }
+    50% {
+      left: 0; /* Move beyond the right */
+    }
+    75% {
+      left: -30%; /* Move back towards the right */
+    }
+    100% {
+      left: 0%; /* End at the original position */
+    }
+  }
+}
+
+/* Media query for screens smaller than 400px */
+@media (max-width: 400px) {
+  .banner{
+    animation: slideIn 45s infinite; 
+  }
+  
+  @keyframes slideIn {
+    0% {
+      left: 0%; /* Start at the original position */
+    }
+    25% {
+      left: 165%; /* Move to the right */
+    }
+    50% {
+      left: 0%; /* Move further right */
+    }
+    75% {
+      left: -166%; /* Move back towards the right */
+    }
+    100% {
+      left: 0%; /* End at the original position */
+    }
+  }
+}
+
