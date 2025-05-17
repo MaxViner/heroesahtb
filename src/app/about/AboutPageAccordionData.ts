@@ -17,7 +17,7 @@ export const AboutPageAccordionData = [
     },
     {
       title: "Заборы с проемами",
-      description: "Description for Item 3",
+      description: "Преодолевается прохождением окна в заборе",
       imageUrl: "/Images/about/hurdles/fenceswithopenings.png",
     },
     {
@@ -25,19 +25,17 @@ export const AboutPageAccordionData = [
       description:`Чтобы пройти рукоход «Синусоида», нужно перебраться с 
                   одной стороны препятствия на другую, используя горизонтальные трубы. Пр
                   и этом запрещается
-                  касаться любой частью тела опорных конструкций препятствия.  
-                  Для прохождения рукохода важно отработать технику: как раскачиваться, 
-                  какие движения делать корпусом тела и руками. `,
+                  касаться любой частью тела опорных конструкций препятствия. `,
       imageUrl: "/Images/about/hurdles/sinus.png",
     },
     {
       title: "Наклонная сетка",
-      description: "Description for Item 5",
+      description: "Проползти снизу сетки расположенной под углом 60 градусов не касаясь земли и опорных конструкций",
       imageUrl: "https://via.placeholder.com/150?text=Image+5",
     },
     {
       title: "Колючая проволока из противотанковых ежей",
-      description: "Преодолевется снизу без касания проволоки",
+      description: "Преодолевется снизу без касания препятствия",
       imageUrl: "/Images/about/hurdles/bardedwire.jpg",
     },
     {
@@ -57,58 +55,58 @@ export const AboutPageAccordionData = [
     },
     {
       title: "Подъем груза",
-      description: "Description for Item 10",
-      imageUrl: "/Images/about/hurdles/lifting.jpg",
+      description: "поднять груз до упора вверх и плавно опустить на землю",
+      imageUrl: "/Images/about/hurdles/lifting.png",
     },
     {
       title: "Гимнастические брусья",
-      description: "Description for Item 11",
-      imageUrl: "/Images/about/hurdles/bags.jpg",
+      description: "Преодолеваются на руках от платформы до платформы без касаия опорныз конструкций какой-либо частью тела",
+      imageUrl: "/Images/about/hurdles/bars.png",
     },
     {
       title: "Рукоход Кольца-Колеса",
-      description: "Description for Item 12",
-      imageUrl: "https://via.placeholder.com/150?text=Image+12",
+      description: "рукоход кольца + Пролезть под сеткой не касась земли + рукоход колеса",
+      imageUrl: "/Images/about/hurdles/wheelrings.png",
     },
     {
       title: "Канаты вертикальные",
-      description: "Description for Item 13",
-      imageUrl: "/Images/about/hurdles/bags.jpg",
+      description: "Поднятья и ударить в колокольчик любой частью тела",
+      imageUrl: "/Images/about/hurdles/kanat.jpg",
     },
     {
       title: "Горка с канатами",
-      description: "Description for Item 14",
-      imageUrl: "/Images/about/hurdles/bags.jpg",
+      description: "Поднятья на платформу используя канат",
+      imageUrl: "/Images/about/hurdles/edgingslide.png",
     },
     {
       title: "Переправа на перекладинах",
-      description: "Description for Item 15",
-      imageUrl: "/Images/about/hurdles/bags.jpg",
+      description: "Пройти всю длину препятствия, помещая удерживаемые в руках стержни внутрь висящих элементов. После этого нужно ударить в звонок, и вернуть перекладины в обозначенное место",
+      imageUrl: "/Images/about/hurdles/gibbons.png",
     },
     {
       title: "Рвы с увеличением дистанции",
-      description: "Description for Item 16",
-      imageUrl: "/Images/about/hurdles/bags.jpg",
+      description: "Естественная преграда в виде 3х рвов с грязью",
+      imageUrl: "/Images/about/hurdles/ditches.jpg",
     },
     {
       title: "Трамплин-вышка",
-      description: "Description for Item 17",
-      imageUrl: "/Images/about/hurdles/bags.jpg",
+      description: "Прыжок в воду с вышки",
+      imageUrl: "/Images/about/hurdles/springboardtower.jpg",
     },
     {
       title: "Рукоход Волна-Качели",
-      description: "Description for Item 18",
-      imageUrl: "/Images/about/hurdles/bags.jpg",
+      description: "Последовательное прохождение двух формаций рукохода",
+      imageUrl: "/Images/about/hurdles/waveswing.png",
     },
     {
       title: "Рукоход Наклонные кольца",
-      description: "Description for Item 19",
-      imageUrl: "/Images/about/hurdles/bags.jpg",
+      description: "Прохождение от первого до полследнего кольца с обязательным прохождением верхнего (остальные не обязательно)" ,
+      imageUrl: "/Images/about/hurdles/inclinedrings.jpg",
     },
     {
       title: "Швея",
-      description: "Description for Item 20",
-      imageUrl: "/Images/about/hurdles/bags.jpg",
+      description: "Поочередное прохождение бревен снизу-сверху",
+      imageUrl: "/Images/about/hurdles/seamstress.jpg",
     },
     {
       title: "Рукоход Вращающиеся шестигранники",
@@ -146,7 +144,7 @@ export const AboutPageAccordionData = [
       imageUrl: "/Images/about/hurdles/bags.jpg",
     },
     {
-      title: "Эверес",
+      title: "Эверест",
       description: "Description for Item 28",
       imageUrl: "/Images/about/hurdles/bags.jpg",
     },

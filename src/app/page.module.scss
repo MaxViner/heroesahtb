@@ -9,54 +9,75 @@
   gap: 32px;
   grid-row-start: 2;
   align-items: center;
-  background: black;
   margin: 0 auto;
   margin-top: 100px;
   width: 100dvw;
   color: aliceblue;
-  ol {
-    text-align: center;
+  @media screen and (max-width:475px) {
+    margin-top: 0px;
   }
+  
 }
 
 .MainLogo {
-  margin-top: -110px;
+  margin-top: -50%;
   z-index: 3;
   width: 100%;
   max-width: 460px;
-  position: absolute;
-  top: 35%;
-  left: 50%;
-  transform: translate(-50%,0%);
   height: auto;
   mix-blend-mode: difference;
 }
 
 .description {
-  width: 90%;
+  width: 100%;
   max-width: 800px;
-  font-size: 24px;
+  position: relative;
+  font-size: 2rem;
+  backdrop-filter: blur(2px);
+  background: rgba(12, 12, 12, 0.637);
+  padding: 5%;
   @media screen and (max-width:475px) {
-    font-size: 0.8rem;
+    font-size: 1.4rem;
+  }
+  ul{
+    list-style: none;
+  }
+  &__bg{
+    position: absolute;
+    width: 80dvw;
+    max-width: 300px;
+    height: auto;
+    aspect-ratio: 1 / 1; 
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255, 0, 0, 0.667) 0%, rgba(255, 0, 0, 0.223) 100%);
+    filter: brightness(0.54);
+    box-shadow: 1px 1px 200px rgb(255, 0, 0);
+    z-index: -1;
+    &__top{
+      top: 0%;
+      right: 0%;
+    }
+    &__bot{
+      bottom: 0%;
+      left: 0%;
+    }
   }
 }
 
 .title {
-  color: #e40b0bb4;
-  font-size: 2rem;
+  font-size: 2.4rem;
   margin-bottom: 10px;
   @media screen and (max-width:475px) {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
   }
 }
 
 .subtitle {
-  color: #e40b0baa;
-  font-size: 1.5rem;
+  font-size: 2.2rem;
   margin-top: 20px;
   margin-bottom: 10px;
   @media screen and (max-width:475px) {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 }
 

@@ -1,31 +1,42 @@
-import Link from "next/link";
+"use client";
+
 import styles from "./Header.module.scss";
 import Logo from "../logo/Logo";
+import { NavLarge, NavSmall } from "./nav/Nav";
+import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 const Header: React.FC = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const pathname = usePathname();
+  useEffect(() => {
+    setIsMenuOpen(false);
+    console.log(pathname);
+  }, [pathname]);
+  const onLogoClick = (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.stopPropagation();
+    e.preventDefault();
+    setIsMenuOpen((prevState) => !prevState);
+  };
   return (
-    <header className={styles.header}>
-      <Logo />
-      <nav>
-        <ul className={styles.navList}>
-          {" "}
-          {/* Added className for styling */}
-          <li className={styles.navItem}>
-            {" "}
-            {/* Added className for each list item */}
-            <Link href="/">Главная</Link>
-          </li>
-          <li className={styles.navItem}>
-            <Link href="/about">Препятствия</Link>
-          </li>
-          <li className={styles.navItem}>
-            <Link href="/training">Тренировки</Link>
-          </li>
-          <li className={styles.navItem}>
-            <Link href="/contact">События</Link>
-          </li>
-        </ul>
-      </nav>
-    </header>
+    <>
+      <button
+        className={`${styles.Logo__sm} ${
+          isMenuOpen ? styles.Logo__sm__open : styles.Logo__sm__closed
+        }`}
+        onClick={onLogoClick}
+      >
+        <Logo />
+      </button>
+      <header
+        className={`${styles.header} ${
+          isMenuOpen ? styles.visible : styles.hidden
+        }`}
+      >
+        <Logo classname={styles.Logo__lm} />
+        <NavLarge />
+        <NavSmall />
+      </header>
+    </>
   );
 };
 

@@ -1,0 +1,49 @@
+.navList {
+    list-style: none; /* Remove list markers */
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: space-around; /* Distribute items evenly */
+    padding: 10px 0; /* Padding */
+    margin: 0; /* Remove default margin */
+    @media screen and (max-width:475px) {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+  }
+  
+  .navItem {
+    width: 100%;
+    text-align: left;
+    margin: 0 15px; /* Add some margin between items */
+    font-size: 20px;
+    margin: 10px;
+    :hover{
+      border-bottom: 2px solid gold;
+      transform: scale(1.1);
+    } 
+    a {
+      text-decoration: none; /* Remove underline */
+      color: #f6bfbf; /* Text color */
+      font-weight: bold; /* Bold text */
+      transition: color 0.3s; /* Smooth transition for hover effect */
+    }
+  }
+  
+  
+  .nav{
+    &__sm{
+      @media screen and (max-width:475px) {
+        display: flex;
+        flex-direction: column;
+        width: 100dvw;
+        height: 500px;
+        transition: 0.5s;
+        border-bottom: 1px solid red;
+      }
+    }
+    &__lm{
+      @media screen and (max-width:475px) {
+        display: none;
+      }
+    }
+  }

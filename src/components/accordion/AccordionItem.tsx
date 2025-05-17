@@ -11,12 +11,15 @@ interface AccordionItemProps {
   activeIndex: number | null;
   toggleAccordion: (index: number) => void;
 }
+
 const AccordionItem: React.FC<AccordionItemProps> = ({
   item,
   index,
   activeIndex,
   toggleAccordion,
 }) => {
+  const isOpen = activeIndex === index; // Determine if this item is open
+
   return (
     <div className={styles.accordionItem}>
       <div
@@ -25,16 +28,17 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
       >
         <h2>{item.title}</h2>
       </div>
-      {activeIndex === index && (
-        <div className={styles.accordionContent}>
-          <img
-            src={item.imageUrl}
-            alt={item.title}
-            className={styles.accordionImage}
-          />
-          <p>{item.description}</p>
-        </div>
-      )}
+      <div
+        className={`${styles.accordionContent} ${isOpen ? styles.open : ""}`} // Add 'open' class if item is active
+      >
+        <img
+          src={item.imageUrl}
+          alt={item.title}
+          className={styles.accordionImage}
+          loading="lazy"
+        />
+        <p>{item.description}</p>
+      </div>
     </div>
   );
 };

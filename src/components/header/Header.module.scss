@@ -7,40 +7,81 @@
     right: 0;
     background-color: #090808df; /* Background color */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for effect */
-    z-index: 1000; /* Ensure header is above other elements */
+    z-index: 4; /* Ensure header is above other elements */
     display: flex;
     width: 100dvw;
-    height: 100px;
     align-items: center;
     justify-content: space-between;
     padding-left: 20px;
     padding-right: 20px;
     @media screen and (max-width:475px) {
-      padding-left: 4px;
+    padding-left: 4px;
     padding-right: 4px;
+    height: auto;
     }
   }
   
-  .navList {
-    list-style: none; /* Remove list markers */
-    display: flex; /* Use flexbox for horizontal layout */
-    justify-content: space-around; /* Distribute items evenly */
-    padding: 10px 0; /* Padding */
-    margin: 0; /* Remove default margin */
-    border-bottom: 1px solid rgba(255, 0, 0, 0.414);
-  }
   
-  .navItem {
-    margin: 0 15px; /* Add some margin between items */
+  .Logo{
+    &__sm{
+      background: transparent;
+      z-index: 5;
+      width: 100px;
+      display: none;
+      border: none;
+      padding: 0;
+      position: fixed;
+      top: 5px;
+      left: 10px;
+      transition: 1s;
+      &__open{
+        transform: rotateY(180deg) translateX(calc(-100vw + 125px)) scale(1.5) translateY(25px);
+      }
+      @media screen and (max-width:475px) {
+        display: block;
+        right: 5px;
+      }
+    }
+    &__lm{
+      display: block;
+      @media screen and (max-width:475px) {
+        display: none;
+      }
+    }
   }
-  
-  .navItem a {
-    text-decoration: none; /* Remove underline */
-    color: #f6bfbf; /* Text color */
-    font-weight: bold; /* Bold text */
-    transition: color 0.3s; /* Smooth transition for hover effect */
+
+  .hidden {
+    opacity: 0;
+    transition: opacity 1s ease;
+    transform: translateY(-300px);
+    animation: fold 1s forwards;
+
   }
-  
-  .navItem a:hover {
-    color: #f3000c; /* Change color on hover */
+  .visible {
+    animation: unfold 1s forwards;
+    transform: translateY(0px);
+
+  }
+  @keyframes unfold {
+    0% {
+      transform: translateY(-500px);
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+
+    }
+  }
+
+  @keyframes fold {
+    0% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+    100% {
+      transform: translateY(-500px);
+      opacity: 0;
+
+    }
   }

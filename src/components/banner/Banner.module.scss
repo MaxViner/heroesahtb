@@ -3,7 +3,8 @@
   width: auto;
   height: 500px;
   z-index: 3;
-  animation: slideIn 20s infinite; 
+  animation: slideIn 30s infinite; 
+  bottom: 30px solid red;
 }
 
 /* Media query for screens below 475px */
